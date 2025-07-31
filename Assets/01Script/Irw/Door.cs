@@ -2,9 +2,17 @@ using UnityEngine;
 
 namespace Irw_Button
 {
-    public interface ButtonDawnIntercace
+    public class Door : MonoBehaviour, ButtonDawnIntercace
     {
+        public void ButtonDawnComplete()
+        {
+            gameObject.SetActive(false);
+        }
 
+        public void ButtonDawnNotComplete()
+        {
+            gameObject.SetActive(true);
+        }
     }
 }
 
