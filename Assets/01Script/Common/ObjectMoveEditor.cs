@@ -26,7 +26,7 @@ public class ObjectMoveEditor : UnityEditor.Editor
 
         _lerp = serializedObject.FindProperty("_lerp");
 
-        _speed = serializedObject.FindProperty("_speed");
+        _speed = serializedObject.FindProperty("_basu");
     }
 
     public override void OnInspectorGUI()
