@@ -12,11 +12,11 @@ public class Sound : MonoBehaviour
 
     private void OnEnable()
     {
-        _slider.value = SoundManager.Instance.Volume;
+        _slider.value = SettingManager.Instance.Volume;
     }
 
     private void Update()
     {
-        SoundManager.Instance.Volume = _slider.value;
+        SettingManager.Instance.Volume = _slider.value;
     }
 }
