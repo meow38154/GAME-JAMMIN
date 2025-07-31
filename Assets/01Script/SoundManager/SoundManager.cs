@@ -3,6 +3,9 @@ using UnityEngine.InputSystem;
 
 public class SoundManager : MonoBehaviour
 {
+    public float Volume { get; set; }
+
+
     [SerializeField] AudioClip[] audioClips;
     [SerializeField] int maxSources = 10;
 
@@ -25,6 +28,7 @@ public class SoundManager : MonoBehaviour
         AudioSource newSource = gameObject.AddComponent<AudioSource>();
         newSource.clip = audioClips[soundNumber];
         newSource.Play();
+        newSource.volume = Volume / 1;
 
         Destroy(newSource, audioClips[soundNumber].length);
     }
