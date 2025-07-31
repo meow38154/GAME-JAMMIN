@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class CameraScript : MonoBehaviour
 {
+    [SerializeField] private float _minCameraSize = 4f;
+    [SerializeField] private float _maxCameraSize = 10f;
     [SerializeField] private float _speed = 5;
     [SerializeField] private float _basu = 0.5f;
 
@@ -19,6 +21,6 @@ public class CameraScript : MonoBehaviour
     {
         transform.position = Vector3.Lerp(transform.position, new Vector3((_player2.position.x + _player1.position.x) / 2, (_player2.position.y + _player1.position.y) / 2, -10), _speed * Time.fixedDeltaTime);
 
-        _camera.orthographicSize = Mathf.Lerp(_camera.orthographicSize, Vector2.Distance(_player1.position, _player2.position * _basu), _speed * Time.fixedDeltaTime);
+        _camera.orthographicSize = Mathf.Clamp(Mathf.Lerp(_camera.orthographicSize, Vector2.Distance(_player1.position, _player2.position * _basu), _speed * Time.fixedDeltaTime), _minCameraSize, _maxCameraSize);
     }
 }
