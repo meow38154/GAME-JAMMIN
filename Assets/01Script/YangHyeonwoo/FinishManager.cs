@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class GoalManager : MonoBehaviour
+public class FinishManager : MonoBehaviour
 {
     [SerializeField] private int nextSceneIndex;
 
