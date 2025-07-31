@@ -531,9 +531,9 @@ MonoBehaviour:
   _moveType: 2
   _moveVector: {x: 0, y: 0, z: 0}
   _translate: 0
-  _target: {fileID: 131547209}
+  _target: {fileID: 0}
   _lerp: 0
-  _speed: 1
+  _speed: 0
 --- !u!114 &1876111085
 MonoBehaviour:
   m_ObjectHideFlags: 0
