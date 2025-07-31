@@ -12,10 +12,10 @@ public class Sound : MonoBehaviour
 
     private void Update()
     {
-        if (SoundManager.Instance.Volume != _slider.value)
-        {
-            _slider.value = SoundManager.Instance.Volume;
-        }
+        //if (SoundManager.Instance.Volume != _slider.value)
+        //{
+        //    _slider.value = SoundManager.Instance.Volume;
+        //}
 
         SoundManager.Instance.Volume = _slider.value;
     }
