@@ -1130,7 +1130,7 @@ MonoBehaviour:
   _coolTime: 0
   _targetPosition: {x: 0, y: 340}
   _resetPosition: {x: 1500, y: 340}
-  _speed: 10
+  _speed: 5
   _startOnEnable: 1
 --- !u!1 &1054711031
 GameObject:
@@ -2408,7 +2408,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 158071929372058479, guid: 6b9c1aa8e080489429be01b9926b0228, type: 3}
       propertyPath: _coolTime
-      value: 1
+      value: 0.02
       objectReference: {fileID: 0}
     - target: {fileID: 1663326801188283544, guid: 6b9c1aa8e080489429be01b9926b0228, type: 3}
       propertyPath: m_Name

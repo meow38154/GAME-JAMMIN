@@ -16,6 +16,11 @@ public class PlayerMovement : MonoBehaviour
         _rb = GetComponent<Rigidbody2D>();
     }
 
+    private void Start()
+    {
+        GameManager.Instance.Reset += ResetPlay;
+    }
+
     private void Update()
     {
         
@@ -25,6 +30,12 @@ public class PlayerMovement : MonoBehaviour
     public void OnJump(InputValue value)
     {
 
+    }
+
+    public void ResetPlay()
+    {
+        Debug.Log("¸®¼ÂµÊ!");
+        transform.position = (Vector3)_savePos;
     }
 
     private void FixedUpdate()
