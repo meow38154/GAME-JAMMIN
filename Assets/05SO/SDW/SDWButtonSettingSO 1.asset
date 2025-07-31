@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc4220d7388a85a4d97b157747c5bbf9, type: 3}
+  m_Name: SDWButtonSettingSO 1
+  m_EditorClassIdentifier: 
+  <nomalSprite>k__BackingField: {fileID: 7251913270682383657, guid: b3eca7a81d14f1044929712a773f1901, type: 3}
+  <dawnSprite>k__BackingField: {fileID: 8201161190782943568, guid: 787b7f5aef1f8c5488b5a8f66529888d, type: 3}
+  <buttonDawnSpeed>k__BackingField: 1000
+  <buttonUPSpeed>k__BackingField: 1000

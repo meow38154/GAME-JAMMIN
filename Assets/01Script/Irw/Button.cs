@@ -18,7 +18,10 @@ namespace Irw_Button
         
         private SpriteRenderer spriteRenderer;
 
-
+        private void OnValidate()
+        {
+            spriteRenderer.sprite = buttonSetting.nomalSprite;
+        }
         private void Start()
         {
 
