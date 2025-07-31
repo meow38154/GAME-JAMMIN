@@ -1,6 +1,5 @@
 using System.Collections.Generic;
 using Lrw_Manager;
-using NUnit.Framework;
 using UnityEngine;
 
 namespace Irw_Button
@@ -9,7 +8,7 @@ namespace Irw_Button
     {
         [SerializeField] private GameObject[] InteractionObject;
         private List<ButtonDawnIntercace> buttonDawnIntercace = new();
-        private LayerMask playerLayer;
+        [SerializeField] private LayerMask playerLayer;
 
 
         [SerializeField] private ButtonSettingSO buttonSetting;
@@ -19,17 +18,17 @@ namespace Irw_Button
         
         private SpriteRenderer spriteRenderer;
 
-        private void Awake()
-        {
-            playerLayer = PlayerManager.instance.playerLayer;
 
-            foreach(GameObject Object in InteractionObject)
+        private void Start()
+        {
+
+            foreach (GameObject Object in InteractionObject)
             {
                 ButtonDawnIntercace a = Object.GetComponent<ButtonDawnIntercace>();
                 a.ButtonUPComplete();
                 buttonDawnIntercace.Add(a);
             }
-            
+
 
             spriteRenderer = GetComponent<SpriteRenderer>();
             spriteRenderer.sprite = buttonSetting.nomalSprite;
@@ -39,7 +38,6 @@ namespace Irw_Button
         {
             PlayerCollision();
             CheckButtonDawn();
-            Debug.Log(buttonDawn);
         }
 
         
@@ -49,11 +47,15 @@ namespace Irw_Button
             if (a != null)
             {
                 buttonDawn += buttonSetting.buttonDawnSpeed * Time.deltaTime;
+                if (buttonDawn > 100) buttonDawn = 100;
             }
             else
             {
                 buttonDawn -= buttonSetting.buttonUPSpeed * Time.deltaTime;
+                if (buttonDawn < 0) buttonDawn = 0;
             }
+
+            
         }
 
 
