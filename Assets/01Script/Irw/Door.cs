@@ -1,17 +1,31 @@
+using Irw_SO;
 using UnityEngine;
 
 namespace Irw_Button
 {
     public class Door : MonoBehaviour, ButtonDawnIntercace
     {
-        public void ButtonDawnComplete()
+        [SerializeField] private DoorSO doorSO;
+        private SpriteRenderer spriteRenderer;
+        private new Collider2D collider;
+
+        private void Awake()
         {
-            gameObject.SetActive(false);
+            spriteRenderer = GetComponent<SpriteRenderer>();
+            collider = GetComponent<Collider2D>();
+            
         }
 
-        public void ButtonDawnNotComplete()
+        public void ButtonDawnComplete()
         {
-            gameObject.SetActive(true);
+            spriteRenderer.sprite = doorSO.OpenSprite;
+            collider.isTrigger = true;
+        }
+
+        public void ButtonUPComplete()
+        {
+            spriteRenderer.sprite = doorSO.CloseSprite;
+            collider.isTrigger = false;
         }
     }
 }
