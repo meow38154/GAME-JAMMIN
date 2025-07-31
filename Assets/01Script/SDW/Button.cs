@@ -10,14 +10,14 @@ namespace SDW
         {
             if (other.CompareTag("Player"))
             {
-                _door.SetActive(false);
+                _door.SetActive(!_door.activeSelf);
             }
         }
         private void OnTriggerExit2D(Collider2D other)
         {
             if (other.CompareTag("Player"))
             {
-                _door.SetActive(true);
+                _door.SetActive(!_door.activeSelf);
             }
         }
     }
