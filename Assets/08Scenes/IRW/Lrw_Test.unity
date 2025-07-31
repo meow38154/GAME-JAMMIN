@@ -461,7 +461,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6614933560625722184, guid: 4f250784f4569c6499bc5f860ef06a34, type: 3}
       propertyPath: m_Name
-      value: Door
+      value: Button
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -478,7 +478,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2751918304635517773, guid: b2ea48adcfdbb724b803cbab62ce6c98, type: 3}
       propertyPath: m_Name
-      value: Square (2)
+      value: Door
       objectReference: {fileID: 0}
     - target: {fileID: 6142652613501890662, guid: b2ea48adcfdbb724b803cbab62ce6c98, type: 3}
       propertyPath: m_LocalPosition.x
