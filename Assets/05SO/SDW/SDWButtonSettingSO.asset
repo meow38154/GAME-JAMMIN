@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc4220d7388a85a4d97b157747c5bbf9, type: 3}
   m_Name: SDWButtonSettingSO
   m_EditorClassIdentifier: 
-  <nomalSprite>k__BackingField: {fileID: -7142443990438063571, guid: 59900fcc790359848aeaaf8eb3a3cc97, type: 3}
-  <dawnSprite>k__BackingField: {fileID: 42924426020596346, guid: 943d634d421996c4eb4e8a6b91b26947, type: 3}
-  <buttonDawnSpeed>k__BackingField: 100
-  <buttonUPSpeed>k__BackingField: 100
+  <nomalSprite>k__BackingField: {fileID: 513799836596980288, guid: 9cb36882eec87f64bab4af1ba71615cc, type: 3}
+  <dawnSprite>k__BackingField: {fileID: -6626544971424080370, guid: 4a6edcd0ba0b17d4f9788395453dfc64, type: 3}
+  <buttonDawnSpeed>k__BackingField: 1000
+  <buttonUPSpeed>k__BackingField: 1000
