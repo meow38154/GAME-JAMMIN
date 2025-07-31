@@ -1,6 +1,7 @@
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class TimeAttack : MonoBehaviour
 {
@@ -30,8 +31,6 @@ public class TimeAttack : MonoBehaviour
     }
     private void OnTimeUp()
     {
-        // Handle what happens when time is up
-        Debug.Log("Time is up!");
-        // You can add more logic here, like ending the game or showing a message
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }
