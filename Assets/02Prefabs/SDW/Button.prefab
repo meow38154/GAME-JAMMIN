@@ -137,6 +137,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54fd0738ee2554344ae484d61ec0f115, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InteractionObject: {fileID: 0}
+  InteractionObject:
+  - {fileID: 0}
+  playerLayer:
+    serializedVersion: 2
+    m_Bits: 8
   buttonSetting: {fileID: 11400000, guid: 82bfc278158d90c4cb8f9ca3ebf4c030, type: 2}
   buttonDawn: 0
