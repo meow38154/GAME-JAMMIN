@@ -3,6 +3,8 @@ using UnityEngine;
 
 public class OnEnableAnimation : MonoBehaviour
 {
+    [SerializeField] private int _max;
+
     [SerializeField] private float _coolTime = 0;
     [SerializeField] private Vector2 _targetPosition;
     [SerializeField] private Vector2 _resetPosition;
@@ -72,4 +74,31 @@ public class OnEnableAnimation : MonoBehaviour
         yield return new WaitForSeconds(time);
         _play = true;
     }
+
+    public void Up()
+    {
+        SettingManager.Instance.PlaySound(0);
+        if (SettingManager.Instance.Language >= _max - 1)
+        {
+            SettingManager.Instance.Language = 0;
+        }
+        else
+        {
+            SettingManager.Instance.Language += 1;
+        }
+    }
+
+    public void Down()
+    {
+        SettingManager.Instance.PlaySound(0);
+        if (SettingManager.Instance.Language <= 0)
+        {
+            SettingManager.Instance.Language = _max - 1;
+        }
+        else
+        {
+            SettingManager.Instance.Language -= 1;
+        }
+    }
+
 }
