@@ -185,6 +185,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 1410934367}
     m_Modifications:
     - target: {fileID: -4367133391210630381, guid: 5cf244fd920ab43418de9f466aa4cac5, type: 3}
+      propertyPath: buttonSetting
+      value: 
+      objectReference: {fileID: 11400000, guid: ca3852eccc03b734495067927de273ec, type: 2}
+    - target: {fileID: -4367133391210630381, guid: 5cf244fd920ab43418de9f466aa4cac5, type: 3}
       propertyPath: 'InteractionObject.Array.data[0]'
       value: 
       objectReference: {fileID: 768227109}
@@ -2426,6 +2430,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 1410934367}
     m_Modifications:
     - target: {fileID: -4367133391210630381, guid: 5cf244fd920ab43418de9f466aa4cac5, type: 3}
+      propertyPath: buttonSetting
+      value: 
+      objectReference: {fileID: 11400000, guid: ca3852eccc03b734495067927de273ec, type: 2}
+    - target: {fileID: -4367133391210630381, guid: 5cf244fd920ab43418de9f466aa4cac5, type: 3}
       propertyPath: 'InteractionObject.Array.data[0]'
       value: 
       objectReference: {fileID: 1177553770}
@@ -2501,6 +2509,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1410934367}
     m_Modifications:
+    - target: {fileID: -4367133391210630381, guid: 5cf244fd920ab43418de9f466aa4cac5, type: 3}
+      propertyPath: buttonSetting
+      value: 
+      objectReference: {fileID: 11400000, guid: ca3852eccc03b734495067927de273ec, type: 2}
     - target: {fileID: -4367133391210630381, guid: 5cf244fd920ab43418de9f466aa4cac5, type: 3}
       propertyPath: 'InteractionObject.Array.data[0]'
       value: 
@@ -2597,6 +2609,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1410934367}
     m_Modifications:
+    - target: {fileID: -4367133391210630381, guid: 5cf244fd920ab43418de9f466aa4cac5, type: 3}
+      propertyPath: buttonSetting
+      value: 
+      objectReference: {fileID: 11400000, guid: ca3852eccc03b734495067927de273ec, type: 2}
     - target: {fileID: -4367133391210630381, guid: 5cf244fd920ab43418de9f466aa4cac5, type: 3}
       propertyPath: 'InteractionObject.Array.data[0]'
       value: 
@@ -2792,6 +2808,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6119872985377791304, guid: 392269a749609824eb32b6698d2f2a13, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: f37eae70cec7aca4a85c24ae245b8fd9, type: 2}
+    - target: {fileID: 8814583181749331737, guid: 392269a749609824eb32b6698d2f2a13, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -5759458312185033452, guid: ed1fd9db94fe4d141b5d391438e6b585, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2886,7 +2910,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 1407411869}
+    m_TransformParent: {fileID: 1505969523}
     m_Modifications:
     - target: {fileID: 5003645471008713978, guid: d4cafbb0660fbc94aafa013681649296, type: 3}
       propertyPath: m_Name
@@ -3028,12 +3052,11 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 946840566}
-  - {fileID: 1206832031}
   - {fileID: 1849846436}
   - {fileID: 1251764769}
   - {fileID: 1410934367}
   - {fileID: 2102164380}
+  - {fileID: 1505969523}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1410934366
@@ -3176,6 +3199,55 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 392269a749609824eb32b6698d2f2a13, type: 3}
+--- !u!1 &1505969522
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1505969523}
+  - component: {fileID: 1505969524}
+  m_Layer: 0
+  m_Name: Finish
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1505969523
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1505969522}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 946840566}
+  - {fileID: 1206832031}
+  m_Father: {fileID: 1407411869}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1505969524
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1505969522}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0ec526294a383642a46c4dd60eda67e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nextSceneIndex: 8
+  playerIn1: 0
+  playerIn2: 0
 --- !u!1 &1541146877 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 517334608751973298, guid: d59ef004db526334c9439e45dbc51c1d, type: 3}
@@ -3194,6 +3266,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1410934367}
     m_Modifications:
+    - target: {fileID: -4367133391210630381, guid: 5cf244fd920ab43418de9f466aa4cac5, type: 3}
+      propertyPath: buttonSetting
+      value: 
+      objectReference: {fileID: 11400000, guid: ca3852eccc03b734495067927de273ec, type: 2}
     - target: {fileID: -4367133391210630381, guid: 5cf244fd920ab43418de9f466aa4cac5, type: 3}
       propertyPath: 'InteractionObject.Array.data[0]'
       value: 
@@ -3259,6 +3335,10 @@ PrefabInstance:
       propertyPath: buttonDawn
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -4367133391210630381, guid: 5cf244fd920ab43418de9f466aa4cac5, type: 3}
+      propertyPath: buttonSetting
+      value: 
+      objectReference: {fileID: 11400000, guid: ca3852eccc03b734495067927de273ec, type: 2}
     - target: {fileID: -4367133391210630381, guid: 5cf244fd920ab43418de9f466aa4cac5, type: 3}
       propertyPath: 'InteractionObject.Array.data[0]'
       value: 
@@ -3340,6 +3420,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1410934367}
     m_Modifications:
+    - target: {fileID: -4367133391210630381, guid: 5cf244fd920ab43418de9f466aa4cac5, type: 3}
+      propertyPath: buttonSetting
+      value: 
+      objectReference: {fileID: 11400000, guid: ca3852eccc03b734495067927de273ec, type: 2}
     - target: {fileID: -4367133391210630381, guid: 5cf244fd920ab43418de9f466aa4cac5, type: 3}
       propertyPath: 'InteractionObject.Array.data[0]'
       value: 
@@ -3662,8 +3746,12 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 1407411869}
+    m_TransformParent: {fileID: 1505969523}
     m_Modifications:
+    - target: {fileID: 352455629692895325, guid: d4cafbb0660fbc94aafa013681649296, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -6179735619225778405, guid: a4be065d9fc7d294c9c0c9aa141962a2, type: 3}
     - target: {fileID: 1993539066498509556, guid: d4cafbb0660fbc94aafa013681649296, type: 3}
       propertyPath: type
       value: 0
