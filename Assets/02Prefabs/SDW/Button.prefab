@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5132076318011830907}
   - component: {fileID: 5592922101197386133}
   - component: {fileID: 4293465260263360267}
-  - component: {fileID: 5430374062898027349}
+  - component: {fileID: -4367133391210630381}
   m_Layer: 0
   m_Name: Button
   m_TagString: Untagged
@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 744243321616828723}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.89, y: 0.92, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -57,7 +57,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -125,7 +125,7 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 0.5
---- !u!114 &5430374062898027349
+--- !u!114 &-4367133391210630381
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -134,7 +134,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 744243321616828723}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ccfcc4398d8d1ef418cc9fdafc1ec983, type: 3}
+  m_Script: {fileID: 11500000, guid: 54fd0738ee2554344ae484d61ec0f115, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _door: {fileID: 0}
+  InteractionObject:
+  - {fileID: 0}
+  playerLayer:
+    serializedVersion: 2
+    m_Bits: 8
+  buttonSetting: {fileID: 11400000, guid: 82bfc278158d90c4cb8f9ca3ebf4c030, type: 2}
+  buttonDawn: 0

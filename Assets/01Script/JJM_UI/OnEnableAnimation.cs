@@ -10,7 +10,9 @@ public class OnEnableAnimation : MonoBehaviour
 
     private RectTransform _rectTransform;
 
-    private bool _play;
+    private bool _play, _back;
+
+    [SerializeField] private bool _startOnEnable = true;
 
     private void Awake()
     {
@@ -19,9 +21,12 @@ public class OnEnableAnimation : MonoBehaviour
 
     private void OnEnable()
     {
-        _play = false;
-        _rectTransform.anchoredPosition = _resetPosition;
-        StartCoroutine(CoolTime(_coolTime));
+        if (_startOnEnable)
+        {
+            _play = false;
+            _rectTransform.anchoredPosition = _resetPosition;
+            StartCoroutine(CoolTime(_coolTime));
+        }
     }
 
     private void Update()
@@ -30,7 +35,22 @@ public class OnEnableAnimation : MonoBehaviour
         {
             _rectTransform.anchoredPosition = Vector2.Lerp(_rectTransform.anchoredPosition, _targetPosition, _speed * Time.deltaTime);
         }
+
+        if (_back)
+        {
+            _rectTransform.anchoredPosition = Vector2.Lerp(_rectTransform.anchoredPosition, _resetPosition, _speed * Time.deltaTime);
+        }
     }
+
+    public void Play(bool value)
+    {
+        _play = value;
+    }
+    public void Back(bool value)
+    {
+        _back = value;
+    }
+
 
     private IEnumerator CoolTime(float time)
     {
