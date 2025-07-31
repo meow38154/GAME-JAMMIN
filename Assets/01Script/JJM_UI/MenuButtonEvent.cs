@@ -11,6 +11,11 @@ public class MenuButtonEvent : MonoBehaviour
 
     private UIOnOff _onOff;
 
+    private void Awake()
+    {
+        _onOff = GetComponent<UIOnOff>();
+        ContinueEvent += _onOff.UIPlay;
+    }
 
     public void Continue()
     {
@@ -25,9 +30,4 @@ public class MenuButtonEvent : MonoBehaviour
         ExitEvent?.Invoke();
     }
 
-
-    public void OnOff()
-    {
-        _onOff.UI = !_onOff.UI;
-    }
 }
