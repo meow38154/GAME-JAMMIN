@@ -26,6 +26,10 @@ namespace Irw_Button
                 {
                     ButtonDawnComplete();
                 }
+                else
+                {
+                    ButtonUPComplete();
+                }
             }
         }
 
