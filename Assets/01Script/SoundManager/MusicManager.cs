@@ -23,7 +23,7 @@ public class MusicManager : MonoBehaviour
     {
         if (TryGetComponent(out AudioSource audio))
         {
-            audio.volume = SoundManager.Instance.Volume;
+            audio.volume = SettingManager.Instance.Volume;
         }
     }
 
@@ -31,15 +31,16 @@ public class MusicManager : MonoBehaviour
     {
         if (TryGetComponent(out AudioSource audio))
         {
+            if (audio.clip == Music[num] && audio.isPlaying)
+                return;
+
             Destroy(audio);
         }
 
         AudioSource source = gameObject.AddComponent<AudioSource>();
-        if (source.resource != Music[num])
-        {
-            source.resource = Music[num];
-            source.loop = true;
-            source.Play();
-        }
+        source.clip = Music[num];
+        source.loop = true;
+        source.Play();
     }
+
 }
