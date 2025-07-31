@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cc4220d7388a85a4d97b157747c5bbf9, type: 3}
-  m_Name: SDWButtonSettingSO
+  m_Name: SDWButtonSettingSO-Y
   m_EditorClassIdentifier: 
-  <nomalSprite>k__BackingField: {fileID: 513799836596980288, guid: 9cb36882eec87f64bab4af1ba71615cc, type: 3}
-  <dawnSprite>k__BackingField: {fileID: -6626544971424080370, guid: 4a6edcd0ba0b17d4f9788395453dfc64, type: 3}
+  <nomalSprite>k__BackingField: {fileID: 7251913270682383657, guid: b3eca7a81d14f1044929712a773f1901, type: 3}
+  <dawnSprite>k__BackingField: {fileID: 8201161190782943568, guid: 787b7f5aef1f8c5488b5a8f66529888d, type: 3}
   <buttonDawnSpeed>k__BackingField: 1000
   <buttonUPSpeed>k__BackingField: 1000
