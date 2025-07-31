@@ -5,7 +5,6 @@ public class SoundManager : MonoBehaviour
 {
     public float Volume { get; set; }
 
-
     [SerializeField] AudioClip[] audioClips;
     [SerializeField] int maxSources = 10;
 
@@ -13,6 +12,8 @@ public class SoundManager : MonoBehaviour
 
     private void Awake()
     {
+        Volume = 1;
+
         if (Instance == null)
         {
             Instance = this;
