@@ -19,8 +19,15 @@ public class MenuButtonEvent : MonoBehaviour
         ContinueEvent += _onOff.UIPlay;
     }
 
+    public void ResetButton()
+    {
+        GameManager.Instance.ResetButton();
+        Continue();
+    }    
+
     public void Continue()
     {
+        Time.timeScale = 1;
         ContinueEvent?.Invoke();
     }
     public void Option()
@@ -30,6 +37,6 @@ public class MenuButtonEvent : MonoBehaviour
     public void Exit()
     {
         ExitEvent?.Invoke();
+        GameManager.Instance.Scene(1);
     }
-
 }

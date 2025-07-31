@@ -18,6 +18,6 @@ public class FinishManager : MonoBehaviour
 
     void NextSceneLoad(int nextSceneIndex)
     {
-        GameManager.Instance.Scene(nextSceneIndex);
+        SceneManager.LoadScene(nextSceneIndex);
     }
 }
