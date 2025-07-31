@@ -2429,6 +2429,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 914906572}
     m_Modifications:
+    - target: {fileID: 352455629692895325, guid: d4cafbb0660fbc94aafa013681649296, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -6179735619225778405, guid: a4be065d9fc7d294c9c0c9aa141962a2, type: 3}
+    - target: {fileID: 1993539066498509556, guid: d4cafbb0660fbc94aafa013681649296, type: 3}
+      propertyPath: type
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5003645471008713978, guid: d4cafbb0660fbc94aafa013681649296, type: 3}
       propertyPath: m_Name
       value: Fin
@@ -3038,6 +3046,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 914906572}
+  - component: {fileID: 914906573}
   m_Layer: 0
   m_Name: Fin
   m_TagString: Untagged
@@ -3062,6 +3071,21 @@ Transform:
   - {fileID: 1678052717}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &914906573
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 914906571}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0ec526294a383642a46c4dd60eda67e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nextSceneIndex: 6
+  playerIn1: 0
+  playerIn2: 0
 --- !u!4 &1020630268 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5132076318011830907, guid: 5cf244fd920ab43418de9f466aa4cac5, type: 3}
