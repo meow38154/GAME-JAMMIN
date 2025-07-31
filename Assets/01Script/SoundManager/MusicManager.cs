@@ -35,8 +35,11 @@ public class MusicManager : MonoBehaviour
         }
 
         AudioSource source = gameObject.AddComponent<AudioSource>();
-        source.resource = Music[num];
-        source.loop = true;
-        source.Play();
+        if (source.resource != Music[num])
+        {
+            source.resource = Music[num];
+            source.loop = true;
+            source.Play();
+        }
     }
 }

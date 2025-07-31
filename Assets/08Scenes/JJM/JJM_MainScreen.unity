@@ -851,6 +851,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <Music>k__BackingField:
+  - {fileID: 8300000, guid: 4b09ced23fa9c37439e3de3a73518267, type: 3}
   - {fileID: 8300000, guid: ea7e1ba609a3cbf48aed1df137924b15, type: 3}
 --- !u!4 &650208728
 Transform:
