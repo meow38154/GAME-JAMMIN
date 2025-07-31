@@ -469,8 +469,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   InteractionObject: {fileID: 1885803045}
-  buttonDawnSpeed: 20
-  buttonUPSpeed: 20
+  buttonSetting: {fileID: 11400000, guid: 82bfc278158d90c4cb8f9ca3ebf4c030, type: 2}
   buttonDawn: 0
 --- !u!212 &1847796768
 SpriteRenderer:
