@@ -4,7 +4,7 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 28
-  productGUID: 07a7068d2cc6f4c42a4ae6416aede4af
+  productGUID: 4730963f5b91d0d499672e34b6dbc6ca
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
@@ -13,7 +13,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: DefaultCompany
-  productName: GAME JAMMIN
+  productName: gamejam
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -612,14 +612,14 @@ PlayerSettings:
   editorAssembliesCompatibilityLevel: 1
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
-  metroPackageName: GAME JAMMIN
+  metroPackageName: gamejam
   metroPackageVersion: 
   metroCertificatePath: 
   metroCertificatePassword: 
   metroCertificateSubject: 
   metroCertificateIssuer: 
   metroCertificateNotAfter: 0000000000000000
-  metroApplicationDescription: GAME JAMMIN
+  metroApplicationDescription: gamejam
   wsaImages: {}
   metroTileShortName: 
   metroTileShowName: 0
@@ -690,11 +690,11 @@ PlayerSettings:
   captureStartupLogs: {}
   activeInputHandler: 2
   windowsGamepadBackendHint: 0
-  cloudProjectId: 99ee55c1-4248-4656-8edd-ab75b7d23c87
+  cloudProjectId: 56a409f8-0941-464c-bca7-9a04d7e2384e
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: GAME JAMMIN
-  organizationId: jing76371
+  projectName: gamejam
+  organizationId: yanghyeonu738
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
   hmiLoadingImage: {fileID: 0}
