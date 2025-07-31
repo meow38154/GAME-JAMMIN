@@ -104,5 +104,5 @@ MonoBehaviour:
   playerLayer:
     serializedVersion: 2
     m_Bits: 8
-  buttonSetting: {fileID: 11400000, guid: 82bfc278158d90c4cb8f9ca3ebf4c030, type: 2}
+  buttonSetting: {fileID: 11400000, guid: ca3852eccc03b734495067927de273ec, type: 2}
   buttonDawn: 0
