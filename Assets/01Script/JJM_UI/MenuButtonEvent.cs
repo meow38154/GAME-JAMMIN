@@ -14,6 +14,7 @@ public class MenuButtonEvent : MonoBehaviour
 
     private void Awake()
     {
+
         _onOff = GetComponent<UIOnOff>();
         ContinueEvent += _onOff.UIPlay;
     }
