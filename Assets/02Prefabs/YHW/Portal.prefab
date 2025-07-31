@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4957292732976999049}
   - component: {fileID: 8063779969859092638}
   - component: {fileID: 3474239812454015582}
+  - component: {fileID: 5848803091725889549}
   m_Layer: 0
   m_Name: Portal (orange)
   m_TagString: Untagged
@@ -148,6 +149,28 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!95 &5848803091725889549
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 558076075155404391}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 20423a645cecd6c4786f489d3365d2c4, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &3087152891647808109
 GameObject:
   m_ObjectHideFlags: 0
@@ -160,6 +183,7 @@ GameObject:
   - component: {fileID: 8970981830461726249}
   - component: {fileID: 3383948257619403162}
   - component: {fileID: 8029632267281228051}
+  - component: {fileID: 852010335775240744}
   m_Layer: 0
   m_Name: Portal (blue)
   m_TagString: Untagged
@@ -296,6 +320,28 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!95 &852010335775240744
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3087152891647808109}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 833b288af0e0c3143bff4c70a0c6eaff, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &5670513762949167959
 GameObject:
   m_ObjectHideFlags: 0
