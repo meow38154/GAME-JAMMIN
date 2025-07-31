@@ -10,13 +10,13 @@ public class Sound : MonoBehaviour
         _slider = GetComponent<Slider>();
     }
 
+    private void OnEnable()
+    {
+        _slider.value = SoundManager.Instance.Volume;
+    }
+
     private void Update()
     {
-        //if (SoundManager.Instance.Volume != _slider.value)
-        //{
-        //    _slider.value = SoundManager.Instance.Volume;
-        //}
-
         SoundManager.Instance.Volume = _slider.value;
     }
 }
