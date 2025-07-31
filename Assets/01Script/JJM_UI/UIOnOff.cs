@@ -23,6 +23,7 @@ public class UIOnOff : MonoBehaviour
 
     public void UIPlay()
     {
+        SettingManager.Instance.PlaySound(0);
         _ui = !_ui;
         _transform.gameObject.SetActive(_ui);
         transform.parent.GetChild(1).GetComponent<OnEnableAnimation>().Play(false);
