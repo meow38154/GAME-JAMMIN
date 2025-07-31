@@ -690,11 +690,11 @@ PlayerSettings:
   captureStartupLogs: {}
   activeInputHandler: 2
   windowsGamepadBackendHint: 0
-  cloudProjectId: 99ee55c1-4248-4656-8edd-ab75b7d23c87
+  cloudProjectId: 56a409f8-0941-464c-bca7-9a04d7e2384e
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: GAME JAMMIN
-  organizationId: jing76371
+  projectName: gamejam
+  organizationId: yanghyeonu738
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
   hmiLoadingImage: {fileID: 0}
