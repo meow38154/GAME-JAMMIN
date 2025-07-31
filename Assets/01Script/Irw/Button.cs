@@ -20,6 +20,7 @@ namespace Irw_Button
         {
             playerLayer = PlayerManager.instance.playerLayer;
             buttonDawnIntercace = InteractionObject.GetComponent<ButtonDawnIntercace>();
+            buttonDawnIntercace.ButtonDawnNotComplete();
         }
 
 
@@ -50,7 +51,7 @@ namespace Irw_Button
             {
                 buttonDawnIntercace.ButtonDawnComplete();
             }
-            else
+            else if(buttonDawn <= 0)
             {
                 buttonDawnIntercace.ButtonDawnNotComplete();
             }
