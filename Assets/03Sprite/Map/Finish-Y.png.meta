@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: a4be065d9fc7d294c9c0c9aa141962a2
+guid: 0160232fbff2eeb47962fdd5699b9371
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6179735619225778405
-    second: GameJam_0
+      213: 3440362492075418921
+    second: Finish-Y_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,7 +100,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: GameJam_0
+      name: Finish-Y_0
       rect:
         serializedVersion: 2
         x: 21
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b17083a223b2d3aa0800000000000000
-      internalID: -6179735619225778405
+      spriteID: 925abbe657f9ebf20800000000000000
+      internalID: 3440362492075418921
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      GameJam_0: -6179735619225778405
+      Finish-Y_0: 3440362492075418921
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

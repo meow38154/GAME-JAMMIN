@@ -3,8 +3,10 @@ using UnityEngine.InputSystem;
 
 public class UIOnOff : MonoBehaviour
 {
-    private bool _ui = false;
+    private bool _ui = false;  
     private Transform _transform;
+
+    public bool UI => _ui;
 
     private void Awake()
     {
@@ -23,5 +25,8 @@ public class UIOnOff : MonoBehaviour
     {
         _ui = !_ui;
         _transform.gameObject.SetActive(_ui);
+        transform.parent.GetChild(1).GetComponent<OnEnableAnimation>().Play(false);
+        transform.parent.GetChild(1).GetComponent<OnEnableAnimation>().Back(true);
+        GetComponent<MainMenuButtonEvent>().Forward = false;
     }
 }

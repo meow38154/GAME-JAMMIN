@@ -9,7 +9,7 @@ public class MainMenuButtonEvent : MonoBehaviour
 
     private OnEnableAnimation _on;
 
-    private bool _forward;
+    public bool Forward { get; set; }
 
     private void Awake()
     {
@@ -19,14 +19,16 @@ public class MainMenuButtonEvent : MonoBehaviour
 
     public void MainOption()
     {
-        _forward = !_forward;
+        SoundManager.Instance.PlaySound(0);
+        Forward = !Forward;
 
-        _on.Play(_forward);
-        _on.Back(!_forward);
+        _on.Play(Forward);
+        _on.Back(!Forward);
     }
 
     public void MainPlay()
     {
+        SoundManager.Instance.PlaySound(0);
         for (int i = 0; i < 3; i++)
         {
             transform.GetChild(i).GetComponent<OnEnableAnimation>().Play(false);
