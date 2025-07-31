@@ -3,7 +3,7 @@ using UnityEngine.InputSystem;
 
 public class UIOnOff : MonoBehaviour
 {
-    public bool UI { get; set;}
+    private bool _ui = false;
     private Transform _transform;
 
     private void Awake()
@@ -15,8 +15,13 @@ public class UIOnOff : MonoBehaviour
     {
         if (Keyboard.current.escapeKey.wasPressedThisFrame)
         {
-            UI = !UI;
-            _transform.gameObject.SetActive(UI);
+            UIPlay();
         }
+    }
+
+    public void UIPlay()
+    {
+        _ui = !_ui;
+        _transform.gameObject.SetActive(_ui);
     }
 }
