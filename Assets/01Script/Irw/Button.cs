@@ -1,33 +1,61 @@
+using Lrw_Manager;
+using Unity.VisualScripting;
 using UnityEngine;
 
 namespace Irw_Button
 {
     public class Button : MonoBehaviour
     {
-        [SerializeField] private LayerMask playerLayer;
+        [SerializeField] private GameObject InteractionObject;
+        private LayerMask playerLayer;
         [SerializeField] private float buttonDawnSpeed = 20;
-
+        [SerializeField] private float buttonUPSpeed = 20;
         [SerializeField]
         [Range(0,100)]
         private float buttonDawn = 0;
+        private ButtonDawnIntercace buttonDawnIntercace;
 
 
-        private void Update()
+        private void Awake()
         {
-            
+            playerLayer = PlayerManager.instance.playerLayer;
+            buttonDawnIntercace = InteractionObject.GetComponent<ButtonDawnIntercace>();
         }
+
 
         private void FixedUpdate()
         {
-             Collider2D a =  Physics2D.OverlapBox(transform.position, transform.lossyScale,0, playerLayer);
-            if(a != null)
+            PlayerCollision();
+            CheckButtonDawn();
+        }
+
+        
+        private void PlayerCollision()
+        {
+            Collider2D a = Physics2D.OverlapBox(transform.position, transform.lossyScale, 0, playerLayer);
+            if (a != null)
             {
                 buttonDawn += buttonDawnSpeed * Time.fixedDeltaTime;
+            }
+            else
+            {
+                buttonDawn -= buttonUPSpeed * Time.fixedDeltaTime;
             }
         }
 
 
+        private void CheckButtonDawn()
+        {
+            if (buttonDawn >= 100)
+            {
+                buttonDawnIntercace.ButtonDawnComplete();
+            }
+            else
+            {
+                buttonDawnIntercace.ButtonDawnNotComplete();
+            }
 
+        }
 
     }
 }
