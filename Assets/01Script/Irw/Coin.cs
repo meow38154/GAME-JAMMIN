@@ -5,8 +5,7 @@ namespace Irw_Coin
 {
     public class Coin : MonoBehaviour
     {
-
-        private void Awake()
+        private void Start()
         {
             CoinManager.instance.CoinCount++;
         }
@@ -26,10 +25,6 @@ namespace Irw_Coin
             {
                 CoinManager.instance.GetCoin++;
                 Destroy(gameObject);
-            }
-            else
-            {
-                
             }
 
 

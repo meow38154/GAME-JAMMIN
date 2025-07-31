@@ -31,6 +31,7 @@ namespace Irw_Coin
             }
         }
         [field:SerializeField] public LayerMask playerLayer { get; private set; }
+        public bool coinDoorOpen { get; private set; }
 
 
         public static CoinManager instance;
@@ -45,7 +46,7 @@ namespace Irw_Coin
         {
             if(coinCount == getCoin)
             {
-                //DoorOpne
+                coinDoorOpen = true;
                 coinCount = 0;
                 getCoin = 0;
             }

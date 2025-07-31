@@ -25,7 +25,6 @@ namespace Irw_Button
             foreach (GameObject Object in InteractionObject)
             {
                 ButtonDawnIntercace a = Object.GetComponent<ButtonDawnIntercace>();
-                a.ButtonUPComplete();
                 buttonDawnIntercace.Add(a);
             }
 
