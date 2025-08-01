@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: 787b7f5aef1f8c5488b5a8f66529888d
+guid: 2e4fc308df78cf649b87a2eef90e6f56
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8201161190782943568
-    second: button-Y-Push_0
+      213: -5903822931451638481
+    second: Gray 1_0
+  - first:
+      213: 1222619780580531138
+    second: Gray 1_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,7 +103,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: button-Y-Push_0
+      name: Gray 1_0
       rect:
         serializedVersion: 2
         x: 0
@@ -108,15 +111,37 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0514652c6a060d170800000000000000
-      internalID: 8201161190782943568
+      spriteID: f2d050ad258611ea0800000000000000
+      internalID: -5903822931451638481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gray 1_1
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 0
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2cb5ed4763e97f010800000000000000
+      internalID: 1222619780580531138
       vertices: []
       indices: 
       edges: []
@@ -125,7 +150,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 6b7c0a35507465b40950035e8965d78b
+    spriteID: 8a51bde81ad0e7c48b3ee3add56ceeea
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +160,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      button-Y-Push_0: 8201161190782943568
+      Gray 1_0: -5903822931451638481
+      Gray 1_1: 1222619780580531138
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

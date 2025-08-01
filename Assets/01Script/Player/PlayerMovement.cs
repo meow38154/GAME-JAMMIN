@@ -19,6 +19,7 @@ public class PlayerMovement : MonoBehaviour
     private void Start()
     {
         GameManager.Instance.Reset += ResetPlay;
+
     }
 
     private void Update()

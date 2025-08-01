@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: DoorSO
   m_EditorClassIdentifier: 
   <CloseSprite>k__BackingField: {fileID: -6022337359400110510, guid: d722a9f4c9c92de47a0c62ae46cb00f7, type: 3}
-  <OpenSprite>k__BackingField: {fileID: 1935279075515628175, guid: d722a9f4c9c92de47a0c62ae46cb00f7, type: 3}
+  <OpenSprite>k__BackingField: {fileID: 1222619780580531138, guid: 2e4fc308df78cf649b87a2eef90e6f56, type: 3}
