@@ -5,15 +5,24 @@ public class PlayerMovement : MonoBehaviour
 {
     private Vector2 _savePos;
 
+    [SerializeField] private Gradient _color;
+    [SerializeField] private Gradient _color2;
+
     [SerializeField] private float _speed = 5;
 
     private Rigidbody2D _rb;
     private Vector2 _moveDir;
 
+    private Animator _anim;
+    private TrailRenderer _trail;
+
     private void Awake()
     {
         _savePos = transform.position;
         _rb = GetComponent<Rigidbody2D>();
+
+        _anim = GetComponent<Animator>();
+        _trail = transform.GetChild(0).GetComponent<TrailRenderer>();
     }
 
     private void Start()
@@ -24,7 +33,15 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {
-        
+        if (_anim.runtimeAnimatorController.name == "Player_B")
+        {
+            _trail.colorGradient = _color;
+        }
+
+        if (_anim.runtimeAnimatorController.name == "Player-EX")
+        {
+            _trail.colorGradient = _color2;
+        }
     }
 
     //ÇÊ¿ä ½Ã
