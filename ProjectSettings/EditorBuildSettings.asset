@@ -39,6 +39,9 @@ EditorBuildSettings:
     path: Assets/08Scenes/SDW_StageScenes/Stage09.unity
     guid: f7aeee613447c984c89d56c93f54085b
   - enabled: 1
+    path: Assets/08Scenes/SDW_StageScenes/Stage10.unity
+    guid: 2e6626b7185f22644af2c9c908416fe2
+  - enabled: 1
     path: Assets/08Scenes/SDW_StageScenes/EXStage01.unity
     guid: b1579a6800bc12f41b80a0b459f2b942
   - enabled: 1

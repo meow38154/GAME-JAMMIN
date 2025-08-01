@@ -163,6 +163,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f24a52b80ea706f438b3ad2148ca7026, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  <HiddenStage>k__BackingField: 000000
+  <Coin>k__BackingField: 100
   <Language>k__BackingField: 0
   audioClips:
   - {fileID: 8300000, guid: e62c3b778ff9f05428667324f7c7a1b6, type: 3}
@@ -173,6 +175,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: cc6a76fc3f6b8354487231f899f502d5, type: 3}
   - {fileID: 8300000, guid: 1b02023f3738da84fa649a9fe91a2b7f, type: 3}
   - {fileID: 8300000, guid: 888831930b324544998ffdd45cd6fea9, type: 3}
+  - {fileID: 8300000, guid: 6889f5bb98e334349adddd32bcf9c09c, type: 3}
   maxSources: 10
   <Font>k__BackingField:
   - {fileID: 11400000, guid: 55e36acbfc139304a8e96f15a42f15e3, type: 2}
