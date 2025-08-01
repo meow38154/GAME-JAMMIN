@@ -668,7 +668,7 @@ GameObject:
   - component: {fileID: 369509399}
   - component: {fileID: 369509398}
   m_Layer: 0
-  m_Name: 'Jeongsanghwa '
+  m_Name: Jeongsanghwa
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
