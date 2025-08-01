@@ -20,8 +20,6 @@ public class DataManager : MonoBehaviour
 
     private void Awake()
     {
-        Volume = 1;
-
         if (Instance == null)
         {
             Instance = this;
@@ -72,6 +70,7 @@ public class DataManager : MonoBehaviour
     {
         PlayerPrefs.SetInt("Coin", Coin);
         PlayerPrefs.SetInt("Language", Language);
+        PlayerPrefs.SetFloat("Volume", Volume);
 
         for (int i = 0; i < HiddenStage.Length; i++)
         {
@@ -85,6 +84,7 @@ public class DataManager : MonoBehaviour
     {
         Coin = PlayerPrefs.GetInt("Coin", 0);
         Language = PlayerPrefs.GetInt("Language", 0);
+        Volume = PlayerPrefs.GetFloat("Volume", 1f);
 
         for (int i = 0; i < HiddenStage.Length; i++)
         {
