@@ -13,6 +13,7 @@ public class NextScene : MonoBehaviour
     private void Start()
     {
         StartCoroutine(Cool());
+        Screen.SetResolution(1920, 1080, true);
     }
 
     private IEnumerator Cool()
