@@ -6,10 +6,12 @@ public class Portal : MonoBehaviour
     [SerializeField] private Transform arrivalpoint;
 
     private PortalManager _PotalManager;
+    private Collider2D collider2D;
 
     private void Awake()
     {
         _PotalManager = GetComponentInParent<PortalManager>();
+        collider2D = GetComponent<Collider2D>();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

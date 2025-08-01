@@ -758,7 +758,6 @@ GameObject:
   m_Component:
   - component: {fileID: 561105665}
   - component: {fileID: 561105666}
-  - component: {fileID: 561105667}
   m_Layer: 0
   m_Name: Fin
   m_TagString: Untagged
@@ -796,23 +795,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 182ceb878ba0e25488fe053e0f28588e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextSceneIndex: 0
-  playerIn1: 0
-  playerIn2: 0
-  playerIn3: 0
---- !u!114 &561105667
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 561105663}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 182ceb878ba0e25488fe053e0f28588e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nextSceneIndex: 0
+  nextSceneIndex: 1
   playerIn1: 0
   playerIn2: 0
   playerIn3: 0
@@ -1076,7 +1059,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerText: {fileID: 121686316}
-  timeLimit: 60
+  timeLimit: 30
 --- !u!4 &805259435
 Transform:
   m_ObjectHideFlags: 0
@@ -1561,7 +1544,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3405712352661546693, guid: 33a31a19da3f84644880515a9266d2fd, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3940700803066752989, guid: 33a31a19da3f84644880515a9266d2fd, type: 3}
       propertyPath: m_AnchorMax.x
