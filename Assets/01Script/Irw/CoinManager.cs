@@ -34,11 +34,11 @@ namespace Irw_Coin
         public bool coinDoorOpen { get; private set; }
 
 
-        public static CoinManager instance;
+        public static CoinManager Instance;
         private void Awake()
         {
-            if (instance != null) Destroy(gameObject);
-            else instance = this;
+            if (Instance != null) Destroy(gameObject);
+            else Instance = this;
         }
 
 

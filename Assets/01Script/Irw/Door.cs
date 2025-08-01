@@ -22,7 +22,7 @@ namespace Irw_Button
         {
             if (coinDoor && coinDoorAutoOpen)
             {
-                if (CoinManager.instance.coinDoorOpen)
+                if (CoinManager.Instance.coinDoorOpen)
                 {
                     ButtonDawnComplete();
                 }
@@ -37,7 +37,7 @@ namespace Irw_Button
         {
             if (coinDoor)
             {
-                if (CoinManager.instance.coinDoorOpen)
+                if (CoinManager.Instance.coinDoorOpen)
                 {
                     spriteRenderer.sprite = doorSO.OpenSprite;
                     collider.isTrigger = true;
