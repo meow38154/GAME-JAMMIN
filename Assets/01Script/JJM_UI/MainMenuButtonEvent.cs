@@ -17,6 +17,11 @@ public class MainMenuButtonEvent : MonoBehaviour
         _on = _gameObject.GetComponent<OnEnableAnimation>();
     }
 
+    public void Exit()
+    {
+        Application.Quit();
+    }
+
     public void MainOption()
     {
         DataManager.Instance.PlaySound(0);

@@ -28,6 +28,8 @@ namespace Irw_Coin
                 DataManager.Instance
 
 
+
+
                     .PlaySound(3);
                 Destroy(gameObject);
             }
