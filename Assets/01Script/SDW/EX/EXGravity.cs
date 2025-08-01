@@ -16,8 +16,14 @@ namespace SDW
         public EXGravityDirection gravityEnum = EXGravityDirection.None;
         private Vector3 gravityDirection;
 
-        private void Awake()
+        private void Start()
         {
+            SetGravityDirection();
+        }
+
+        public void SetGravityDirection()
+        {
+            Debug.Log($"Setting gravity direction to: {gravityEnum}");
             switch (gravityEnum)
             {
                 case EXGravityDirection.Up:
@@ -32,24 +38,12 @@ namespace SDW
                 case EXGravityDirection.Right:
                     gravityDirection = Vector3.right;
                     break;
+                default:
+                    gravityDirection = Vector3.zero;
+                    break;
             }
-        }
 
-        private void Start()
-        {
-            SetGravityDirection();
-        }
-
-        public void SetGravityDirection()
-        {
-            if (gravityEnum != EXGravityDirection.None)
-            {            
-                Physics2D.gravity = gravityDirection * Physics2D.gravity.magnitude;
-            }
-            else
-            {
-                Physics2D.gravity = Vector2.zero;
-            }
+            Physics2D.gravity = gravityDirection * Physics2D.gravity.magnitude;
         }
     }
 }
