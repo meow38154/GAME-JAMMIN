@@ -1731,9 +1731,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _text:
-  - "\uAC00\uACA9"
-  - Price
-  - "\u4FA1\u683C"
+  - "\uAD6C\uB9E4\uB428"
+  - Purchased
+  - "\u8CFC\u5165\u6E08\u307F"
   - 
   - 
 --- !u!114 &690276107
@@ -1923,9 +1923,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _text:
-  - "\uAC00\uACA9"
-  - Price
-  - "\u4FA1\u683C"
+  - "\uAD6C\uB9E4\uB428"
+  - Purchased
+  - "\u8CFC\u5165\u6E08\u307F"
   - 
   - 
 --- !u!114 &717581696
@@ -6432,9 +6432,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _text:
-  - "\uAC00\uACA9"
-  - Price
-  - "\u4FA1\u683C"
+  - "\uAD6C\uB9E4\uB428"
+  - Purchased
+  - "\u8CFC\u5165\u6E08\u307F"
   - 
   - 
 --- !u!114 &1908409942

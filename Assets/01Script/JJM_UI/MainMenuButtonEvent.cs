@@ -29,7 +29,13 @@ public class MainMenuButtonEvent : MonoBehaviour
     public void MainPlay()
     {
         DataManager.Instance.PlaySound(0);
-        for (int i = 0; i < 3; i++)
+        ButtonMove();
+        StartCoroutine(CoolTime());
+    }
+
+    private void ButtonMove()
+    {
+        for (int i = 0; i < 4; i++)
         {
             transform.GetChild(i).GetComponent<OnEnableAnimation>().Play(false);
             transform.GetChild(i).GetComponent<OnEnableAnimation>().Back(true);
@@ -40,12 +46,24 @@ public class MainMenuButtonEvent : MonoBehaviour
 
         transform.parent.GetChild(2).GetComponent<OnEnableAnimation>().Play(false);
         transform.parent.GetChild(2).GetComponent<OnEnableAnimation>().Back(true);
-        StartCoroutine(CoolTime());
     }
 
     private IEnumerator CoolTime()
     {
         yield return new WaitForSeconds(0.5f);
         SceneManager.LoadScene(1);
+    }
+
+    private IEnumerator CoolTimeT()
+    {
+        yield return new WaitForSeconds(0.5f);
+        SceneManager.LoadScene(15);
+    }
+
+    public void Tutorial()
+    {
+        DataManager.Instance.PlaySound(0);
+        ButtonMove();
+        StartCoroutine(CoolTimeT());
     }
 }
