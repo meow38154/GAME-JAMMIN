@@ -894,7 +894,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 182ceb878ba0e25488fe053e0f28588e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextSceneIndex: 1
+  nextSceneIndex: 2
   playerIn1: 0
   playerIn2: 0
   playerIn3: 0
