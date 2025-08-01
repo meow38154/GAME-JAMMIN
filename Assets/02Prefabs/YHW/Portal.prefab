@@ -102,7 +102,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ad29c0715b3a2f429c279a17d61bf48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  arrivalpoint: {fileID: 8282956234375950868}
+  arrivalPoint: {fileID: 8282956234375950868}
 --- !u!61 &3474239812454015582
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -273,7 +273,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ad29c0715b3a2f429c279a17d61bf48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  arrivalpoint: {fileID: 5863218027444462074}
+  arrivalPoint: {fileID: 5863218027444462074}
 --- !u!61 &8029632267281228051
 BoxCollider2D:
   m_ObjectHideFlags: 0

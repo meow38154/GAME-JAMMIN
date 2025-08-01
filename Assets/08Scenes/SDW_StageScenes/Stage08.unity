@@ -502,8 +502,8 @@ Camera:
   m_GameObject: {fileID: 216424839}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -1114,7 +1114,7 @@ PrefabInstance:
     - target: {fileID: -4367133391210630381, guid: 5cf244fd920ab43418de9f466aa4cac5, type: 3}
       propertyPath: buttonSetting
       value: 
-      objectReference: {fileID: 11400000, guid: ca3852eccc03b734495067927de273ec, type: 2}
+      objectReference: {fileID: 11400000, guid: e0946aa9031f64340b2905793a966a90, type: 2}
     - target: {fileID: -4367133391210630381, guid: 5cf244fd920ab43418de9f466aa4cac5, type: 3}
       propertyPath: InteractionObject.Array.size
       value: 2
@@ -5443,7 +5443,7 @@ PrefabInstance:
     - target: {fileID: -4367133391210630381, guid: 5cf244fd920ab43418de9f466aa4cac5, type: 3}
       propertyPath: buttonSetting
       value: 
-      objectReference: {fileID: 11400000, guid: e0946aa9031f64340b2905793a966a90, type: 2}
+      objectReference: {fileID: 11400000, guid: ca3852eccc03b734495067927de273ec, type: 2}
     - target: {fileID: -4367133391210630381, guid: 5cf244fd920ab43418de9f466aa4cac5, type: 3}
       propertyPath: InteractionObject.Array.size
       value: 2
