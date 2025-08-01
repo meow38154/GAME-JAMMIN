@@ -28,6 +28,8 @@ public class Scene0 : MonoBehaviour
 
     public void ShotPlay()
     {
+        DataManager.Instance.PlaySound(0);
+
         transform.GetChild(3).GetComponent<OnEnableAnimation>().Play(true);
     }
 }
