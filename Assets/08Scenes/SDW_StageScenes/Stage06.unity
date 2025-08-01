@@ -249,7 +249,7 @@ PrefabInstance:
     - target: {fileID: -4367133391210630381, guid: 5cf244fd920ab43418de9f466aa4cac5, type: 3}
       propertyPath: buttonSetting
       value: 
-      objectReference: {fileID: 11400000, guid: ca3852eccc03b734495067927de273ec, type: 2}
+      objectReference: {fileID: 11400000, guid: e0946aa9031f64340b2905793a966a90, type: 2}
     - target: {fileID: -4367133391210630381, guid: 5cf244fd920ab43418de9f466aa4cac5, type: 3}
       propertyPath: 'InteractionObject.Array.data[0]'
       value: 
@@ -3917,7 +3917,7 @@ PrefabInstance:
     - target: {fileID: -4367133391210630381, guid: 5cf244fd920ab43418de9f466aa4cac5, type: 3}
       propertyPath: buttonSetting
       value: 
-      objectReference: {fileID: 11400000, guid: ca3852eccc03b734495067927de273ec, type: 2}
+      objectReference: {fileID: 11400000, guid: e0946aa9031f64340b2905793a966a90, type: 2}
     - target: {fileID: -4367133391210630381, guid: 5cf244fd920ab43418de9f466aa4cac5, type: 3}
       propertyPath: 'InteractionObject.Array.data[0]'
       value: 

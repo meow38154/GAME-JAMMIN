@@ -3,46 +3,46 @@ using UnityEngine;
 
 public class Portal : MonoBehaviour
 {
-    [SerializeField] private Transform arrivalpoint;
+    [SerializeField] private Transform arrivalPoint;
 
-    private PortalManager _PotalManager;
-    private Collider2D collider2D;
+    private PortalManager _portalManager;
+    private Collider2D _collider2D;
 
     private void Awake()
     {
-        _PotalManager = GetComponentInParent<PortalManager>();
-        collider2D = GetComponent<Collider2D>();
+        _portalManager = GetComponentInParent<PortalManager>();
+        _collider2D = GetComponent<Collider2D>();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.TryGetComponent<PlayerMovement>(out PlayerMovement playermovement))
-        {
-            if (_PotalManager.Inactive == false && _PotalManager.CoolTime == false)
-            {
-                collision.gameObject.transform.position = arrivalpoint.position;
-                _PotalManager.Inactive = true;
-                StartCoroutine(StartCooltime());
-            }
-        }
-    }
+        if (_portalManager.Cooldown) return;
 
-    private void OnTriggerExit2D(Collider2D collision)
-    {
         if (collision.gameObject.TryGetComponent<PlayerMovement>(out PlayerMovement playerMovement))
         {
-            if (_PotalManager.Inactive == true && _PotalManager.CoolTime == false)
+            collision.gameObject.transform.position = arrivalPoint.position;
+            StartCoroutine(StartCooldown());
+            PortalManager targetPortalManager = arrivalPoint.GetComponentInParent<PortalManager>();
+            if (targetPortalManager != null)
             {
-                _PotalManager.Inactive = false;
+                targetPortalManager.Cooldown = true;
+                StartCoroutine(ClearTargetCooldown(targetPortalManager));
             }
+
+            DataManager.Instance.PlaySound(Random.Range(4, 6));
         }
     }
 
-    IEnumerator StartCooltime()
+    IEnumerator StartCooldown()
     {
-        DataManager.Instance.PlaySound(Random.Range(4, 6));
-        _PotalManager.CoolTime = true;
-        yield return new WaitForSeconds(0.1f);
-        _PotalManager.CoolTime = false;
+        _portalManager.Cooldown = true;
+        yield return new WaitForSeconds(0.3f);
+        _portalManager.Cooldown = false;
+    }
+
+    IEnumerator ClearTargetCooldown(PortalManager target)
+    {
+        yield return new WaitForSeconds(0.3f);
+        target.Cooldown = false;
     }
 }
