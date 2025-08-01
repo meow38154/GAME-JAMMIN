@@ -15,7 +15,7 @@ public class Scene0 : MonoBehaviour
 
     private IEnumerator SceneChange()
     {
-        SettingManager.Instance.PlaySound(1);
+        DataManager.Instance.PlaySound(1);
 
         for (int i = 0; i < transform.childCount; i++)
         {
@@ -24,5 +24,10 @@ public class Scene0 : MonoBehaviour
 
         yield return new WaitForSeconds(0.5f);
         SceneManager.LoadScene(0);
+    }
+
+    public void ShotPlay()
+    {
+        transform.GetChild(3).GetComponent<OnEnableAnimation>().Play(true);
     }
 }

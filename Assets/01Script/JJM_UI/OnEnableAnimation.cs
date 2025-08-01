@@ -77,27 +77,27 @@ public class OnEnableAnimation : MonoBehaviour
 
     public void Up()
     {
-        SettingManager.Instance.PlaySound(0);
-        if (SettingManager.Instance.Language >= _max - 1)
+        DataManager.Instance.PlaySound(0);
+        if (DataManager.Instance.Language >= _max - 1)
         {
-            SettingManager.Instance.Language = 0;
+            DataManager.Instance.Language = 0;
         }
         else
         {
-            SettingManager.Instance.Language += 1;
+            DataManager.Instance.Language += 1;
         }
     }
 
     public void Down()
     {
-        SettingManager.Instance.PlaySound(0);
-        if (SettingManager.Instance.Language <= 0)
+        DataManager.Instance.PlaySound(0);
+        if (DataManager.Instance.Language <= 0)
         {
-            SettingManager.Instance.Language = _max - 1;
+            DataManager.Instance.Language = _max - 1;
         }
         else
         {
-            SettingManager.Instance.Language -= 1;
+            DataManager.Instance.Language -= 1;
         }
     }
 

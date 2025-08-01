@@ -2,8 +2,9 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class SettingManager : MonoBehaviour
+public class DataManager : MonoBehaviour
 {
+    [field: SerializeField] public int Coin { get; set; }
     public float Volume { get; set; }
 
     [field: SerializeField] public int Language { get; set; }
@@ -13,7 +14,7 @@ public class SettingManager : MonoBehaviour
 
     [field: SerializeField] public TMP_FontAsset[] Font { get; private set; }
 
-    public static SettingManager Instance;
+    public static DataManager Instance;
 
     private void Awake()
     {

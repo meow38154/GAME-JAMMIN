@@ -19,7 +19,7 @@ public class MainMenuButtonEvent : MonoBehaviour
 
     public void MainOption()
     {
-        SettingManager.Instance.PlaySound(0);
+        DataManager.Instance.PlaySound(0);
         Forward = !Forward;
 
         _on.Play(Forward);
@@ -28,7 +28,7 @@ public class MainMenuButtonEvent : MonoBehaviour
 
     public void MainPlay()
     {
-        SettingManager.Instance.PlaySound(0);
+        DataManager.Instance.PlaySound(0);
         for (int i = 0; i < 3; i++)
         {
             transform.GetChild(i).GetComponent<OnEnableAnimation>().Play(false);

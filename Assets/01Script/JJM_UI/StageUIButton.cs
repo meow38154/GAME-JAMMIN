@@ -7,7 +7,7 @@ public class StageUIButton : MonoBehaviour
 
     public void Sound0()
     {
-        SettingManager.Instance.PlaySound(0);
+        DataManager.Instance.PlaySound(0);
         Debug.Log("»ç¿îµå 0");
     }
     public void Stage01()

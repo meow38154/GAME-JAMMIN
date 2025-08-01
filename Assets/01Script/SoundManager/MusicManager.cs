@@ -23,7 +23,7 @@ public class MusicManager : MonoBehaviour
     {
         if (TryGetComponent(out AudioSource audio))
         {
-            audio.volume = SettingManager.Instance.Volume;
+            audio.volume = DataManager.Instance.Volume;
         }
     }
 

@@ -15,12 +15,12 @@ public class LanText : MonoBehaviour
 
     private void Update()
     {
-        if (_textGUI.text != _text[SettingManager.Instance.Language])
+        if (_textGUI.text != _text[DataManager.Instance.Language])
         {
-            _textGUI.font = SettingManager.Instance.Font[SettingManager.Instance.Language];
+            _textGUI.font = DataManager.Instance.Font[DataManager.Instance.Language];
         }
 
 
-        _textGUI.text = _text[SettingManager.Instance.Language];
+        _textGUI.text = _text[DataManager.Instance.Language];
     }
 }

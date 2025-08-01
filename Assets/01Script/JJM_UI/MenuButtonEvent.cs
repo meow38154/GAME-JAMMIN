@@ -21,25 +21,25 @@ public class MenuButtonEvent : MonoBehaviour
 
     public void ResetButton()
     {
-        SettingManager.Instance.PlaySound(2);
+        DataManager.Instance.PlaySound(2);
         GameManager.Instance.ResetButton();
         Continue();
     }    
 
     public void Continue()
     {
-        SettingManager.Instance.PlaySound(0);
+        DataManager.Instance.PlaySound(0);
         Time.timeScale = 1;
         ContinueEvent?.Invoke();
     }
     public void Option()
     {
-        SettingManager.Instance.PlaySound(0);
+        DataManager.Instance.PlaySound(0);
         OptionEvent?.Invoke();
     }
     public void Exit()
     {
-        SettingManager.Instance.PlaySound(0);
+        DataManager.Instance.PlaySound(0);
         ExitEvent?.Invoke();
         GameManager.Instance.Scene(1);
     }
