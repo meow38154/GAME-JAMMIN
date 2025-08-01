@@ -38,7 +38,7 @@ public class Portal : MonoBehaviour
 
     IEnumerator StartCooltime()
     {
-        SettingManager.Instance.PlaySound(Random.Range(4, 6));
+        DataManager.Instance.PlaySound(Random.Range(4, 6));
         _PotalManager.CoolTime = true;
         yield return new WaitForSeconds(0.1f);
         _PotalManager.CoolTime = false;

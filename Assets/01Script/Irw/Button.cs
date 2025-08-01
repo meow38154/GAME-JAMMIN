@@ -10,13 +10,9 @@ namespace Irw_Button
         private List<ButtonDawnIntercace> buttonDawnIntercace = new();
         [SerializeField] private LayerMask playerLayer;
         [SerializeField] private ButtonSettingSO buttonSetting;
-
         [UnityEngine.Range(0, 100)]
         [SerializeField] private float buttonDawn;
-
         private SpriteRenderer spriteRenderer;
-
-        // 추가된 플래그
         private bool isButtonDownTriggered = false;
         private bool isButtonUpTriggered = true;
 
@@ -40,7 +36,7 @@ namespace Irw_Button
 
         private void PlayerCollision()
         {
-            Collider2D a = Physics2D.OverlapBox(transform.position, transform.lossyScale, 0, playerLayer);
+            Collider2D a = Physics2D.OverlapBox(transform.position, transform.lossyScale * 0.9f, 0, playerLayer);
             if (a != null)
             {
                 buttonDawn += buttonSetting.buttonDawnSpeed * Time.deltaTime;
@@ -65,8 +61,7 @@ namespace Irw_Button
                     }
 
                     spriteRenderer.sprite = buttonSetting.dawnSprite;
-                    SettingManager.Instance.PlaySound(6);
-
+                    DataManager.Instance.PlaySound(6);
                     isButtonDownTriggered = true;
                     isButtonUpTriggered = false;
                 }
@@ -81,18 +76,22 @@ namespace Irw_Button
                     }
 
                     spriteRenderer.sprite = buttonSetting.nomalSprite;
-                    SettingManager.Instance.PlaySound(7);
-
+                    DataManager.Instance.PlaySound(7);
                     isButtonUpTriggered = true;
                     isButtonDownTriggered = false;
                 }
             }
             else
             {
-                // 중간 단계에서는 중복 방지를 위해 둘 다 false
                 isButtonDownTriggered = false;
                 isButtonUpTriggered = false;
             }
+        }
+
+        private void OnDrawGizmos()
+        {
+            Gizmos.color = Color.red;
+            Gizmos.DrawWireCube(transform.position, transform.lossyScale * 0.9f);
         }
     }
 }

@@ -16,6 +16,6 @@ public class LanImage : MonoBehaviour
 
     private void Update()
     {
-        _image.sprite = _sprite[SettingManager.Instance.Language];
+        _image.sprite = _sprite[DataManager.Instance.Language];
     }
 }

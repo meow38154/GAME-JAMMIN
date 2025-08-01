@@ -23,8 +23,10 @@ namespace Irw_Coin
             Collider2D a = Physics2D.OverlapBox(transform.position, transform.lossyScale, 0, CoinManager.instance.playerLayer);
             if (a != null)
             {
+                DataManager.Instance.Coin++;
                 CoinManager.instance.GetCoin++;
-                SettingManager.Instance.PlaySound(3);
+                DataManager.Instance
+                    .PlaySound(3);
                 Destroy(gameObject);
             }
 
