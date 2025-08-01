@@ -1,10 +1,18 @@
 using Irw_Button;
 using UnityEngine;
+using System.Collections;
 
 namespace Irw_Coin
 {
     public class Coin : MonoBehaviour
     {
+        private Animator _animator;
+
+        private void Awake()
+        {
+            _animator = GetComponent<Animator>();
+        }
+
         private void Start()
         {
             CoinManager.instance.CoinCount++;
@@ -13,10 +21,7 @@ namespace Irw_Coin
         private void Update()
         {
             CollisionCheck();
-
-
         }
-
 
         private void CollisionCheck()
         {
@@ -25,18 +30,17 @@ namespace Irw_Coin
             {
                 DataManager.Instance.Coin++;
                 CoinManager.instance.GetCoin++;
-                DataManager.Instance
-
-
-
-
-                    .PlaySound(3);
-                Destroy(gameObject);
+                DataManager.Instance.PlaySound(3);
+                _animator.SetBool("isCollected", true);
+                StartCoroutine(OnCollected());
             }
-
-
         }
 
+        private IEnumerator OnCollected()
+        {
+            yield return new WaitForSeconds(0.5f);
+            Destroy(gameObject);
+        }
     }
 }
 
