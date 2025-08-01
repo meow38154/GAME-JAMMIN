@@ -4,6 +4,8 @@ using UnityEngine.InputSystem;
 
 public class DataManager : MonoBehaviour
 {
+    [field: SerializeField] public bool[] HiddenStage { get; set; }
+
     [field: SerializeField] public int Coin { get; set; }
     public float Volume { get; set; }
 

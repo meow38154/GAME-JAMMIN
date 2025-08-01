@@ -26,6 +26,8 @@ namespace Irw_Coin
                 DataManager.Instance.Coin++;
                 CoinManager.instance.GetCoin++;
                 DataManager.Instance
+
+
                     .PlaySound(3);
                 Destroy(gameObject);
             }
