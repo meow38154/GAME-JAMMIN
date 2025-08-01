@@ -11,8 +11,8 @@ public class DataManager : MonoBehaviour
 
     [field: SerializeField] public int Language { get; set; }
 
-    [SerializeField] AudioClip[] audioClips;
-    [SerializeField] int maxSources = 10;
+    [SerializeField] private AudioClip[] audioClips;
+    [SerializeField] private int maxSources = 10;
 
     [field: SerializeField] public TMP_FontAsset[] Font { get; private set; }
 
@@ -26,8 +26,17 @@ public class DataManager : MonoBehaviour
         {
             Instance = this;
             DontDestroyOnLoad(gameObject);
+            LoadData();
         }
-        else Destroy(gameObject);
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
+
+    private void OnApplicationQuit()
+    {
+        SaveData();
     }
 
     public void PlaySound(int soundNumber)
@@ -37,16 +46,49 @@ public class DataManager : MonoBehaviour
         AudioSource newSource = gameObject.AddComponent<AudioSource>();
         newSource.clip = audioClips[soundNumber];
         newSource.Play();
-        newSource.volume = Volume / 1;
+        newSource.volume = Volume;
 
         Destroy(newSource, audioClips[soundNumber].length);
     }
 
     private void Update()
     {
+        if (Keyboard.current.rKey.wasPressedThisFrame && Keyboard.current.sKey.isPressed)
+        {
+            for (int i = 0; i < HiddenStage.Length; i++)
+            {
+                HiddenStage[i] = false;
+                Coin = 0;
+            }
+        }
+
         if (Keyboard.current.bKey.wasPressedThisFrame)
         {
             PlaySound(0);
+        }
+    }
+
+    private void SaveData()
+    {
+        PlayerPrefs.SetInt("Coin", Coin);
+        PlayerPrefs.SetInt("Language", Language);
+
+        for (int i = 0; i < HiddenStage.Length; i++)
+        {
+            PlayerPrefs.SetInt("HiddenStage_" + i, HiddenStage[i] ? 1 : 0);
+        }
+
+        PlayerPrefs.Save();
+    }
+
+    private void LoadData()
+    {
+        Coin = PlayerPrefs.GetInt("Coin", 0);
+        Language = PlayerPrefs.GetInt("Language", 0);
+
+        for (int i = 0; i < HiddenStage.Length; i++)
+        {
+            HiddenStage[i] = PlayerPrefs.GetInt("HiddenStage_" + i, 0) == 1;
         }
     }
 }
