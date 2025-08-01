@@ -23,7 +23,7 @@ public class Scene0 : MonoBehaviour
         }
 
         yield return new WaitForSeconds(0.5f);
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(16);
     }
 
     public void ShotPlay()
