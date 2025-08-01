@@ -4292,7 +4292,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 158071929372058479, guid: 6b9c1aa8e080489429be01b9926b0228, type: 3}
       propertyPath: _musicNumber
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1663326801188283544, guid: 6b9c1aa8e080489429be01b9926b0228, type: 3}
       propertyPath: m_Name
