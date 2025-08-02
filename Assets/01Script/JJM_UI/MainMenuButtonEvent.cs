@@ -56,13 +56,13 @@ public class MainMenuButtonEvent : MonoBehaviour
     private IEnumerator CoolTime()
     {
         yield return new WaitForSeconds(0.5f);
-        SceneManager.LoadScene(1);
+        UnityEngine.SceneManagement.SceneManager.LoadScene(1);
     }
 
     private IEnumerator CoolTimeT()
     {
         yield return new WaitForSeconds(0.5f);
-        SceneManager.LoadScene(15);
+        UnityEngine.SceneManagement.SceneManager.LoadScene(15);
     }
 
     public void Tutorial()

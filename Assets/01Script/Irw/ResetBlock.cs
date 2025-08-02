@@ -14,7 +14,7 @@ public class NewMonoBehaviourScript : MonoBehaviour
         if (a != null)
         {
             currentTime += Time.deltaTime;
-            if (currentTime >= ResetTime) SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            if (currentTime >= ResetTime) UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex);
         }
         else
         {
