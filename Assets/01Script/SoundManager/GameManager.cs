@@ -9,7 +9,11 @@ public class GameManager : MonoBehaviour
 
     [field: SerializeField] public GameObject UI { get; private set; }
 
+    public bool Move { get; private set; }
+
     public event Action Reset;
+
+    private bool _yes;
     private void Awake()
     {
         if (Instance == null)
@@ -35,9 +39,16 @@ public class GameManager : MonoBehaviour
 
     private IEnumerator SceneChange(int num)
     {
-        Time.timeScale = 0;
-        UI.transform.parent.transform.GetChild(2).GetComponent<FadeSystem>().FadeIn(0.4f, true);
-        yield return new WaitForSecondsRealtime(0.5f);
-        SceneManager.LoadScene(num);
+        if (!_yes)
+        {
+            SceneManagerD.Instance.SceneStart();
+            _yes = true;
+        }
+        Debug.Log("Ω√¿€");
+        Move = true;
+        yield return new WaitForSeconds(0.5f);
+        UnityEngine.SceneManagement.SceneManager.LoadScene(num);
+        SceneManagerD.Instance.SceneEnd();
+        Debug.Log("≥°");
     }
 }

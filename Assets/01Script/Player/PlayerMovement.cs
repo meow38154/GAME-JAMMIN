@@ -58,7 +58,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (!GameManager.Instance.UI.GetComponent<UIOnOff>().UI)
+        if (!GameManager.Instance.UI.GetComponent<UIOnOff>().UI || !GameManager.Instance.Move)
         _rb.linearVelocity = _moveDir * _speed;
     }
     public void OnMove(InputValue value)

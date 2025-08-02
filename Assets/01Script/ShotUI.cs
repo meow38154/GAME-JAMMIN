@@ -25,7 +25,7 @@ public class ShotUI : MonoBehaviour
     {
         if (DataManager.Instance.HiddenStage[0])
         {
-            SceneManager.LoadScene("EXStage01");
+            UnityEngine.SceneManagement.SceneManager.LoadScene("EXStage01");
         }
 
         if (10 <= DataManager.Instance.Coin && !DataManager.Instance.HiddenStage[0])
@@ -41,7 +41,7 @@ public class ShotUI : MonoBehaviour
     {
         if (DataManager.Instance.HiddenStage[1])
         {
-            SceneManager.LoadScene("EXStage02");
+            UnityEngine.SceneManagement.SceneManager.LoadScene("EXStage02");
         }
 
         if (20 <= DataManager.Instance.Coin && !DataManager.Instance.HiddenStage[1])
@@ -57,7 +57,7 @@ public class ShotUI : MonoBehaviour
     {
         if (DataManager.Instance.HiddenStage[2])
         {
-            SceneManager.LoadScene("EXStage03");
+            UnityEngine.SceneManagement.SceneManager.LoadScene("EXStage03");
         }
 
         if (25 <= DataManager.Instance.Coin && !DataManager.Instance.HiddenStage[2])

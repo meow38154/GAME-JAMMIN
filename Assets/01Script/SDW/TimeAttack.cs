@@ -31,6 +31,6 @@ public class TimeAttack : MonoBehaviour
     }
     private void OnTimeUp()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex);
     }
 }

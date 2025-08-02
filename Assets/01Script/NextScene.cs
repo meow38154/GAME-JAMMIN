@@ -27,7 +27,7 @@ public class NextScene : MonoBehaviour
     private IEnumerator NextSceneCoolTime()
     {
         yield return new WaitForSeconds(_time);
-        SceneManager.LoadScene(16);
+        UnityEngine.SceneManagement.SceneManager.LoadScene(16);
     }
 
     private IEnumerator LogoTime()
