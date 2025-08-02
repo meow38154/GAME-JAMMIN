@@ -1,72 +1,70 @@
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class StageUIButton : MonoBehaviour
 {
-    [SerializeField] private string[] _sceneName;
-
     public void Sound0()
     {
         DataManager.Instance.PlaySound(0);
         Debug.Log("»ç¿îµå 0");
     }
+
     public void Stage01()
     {
-        UnityEngine.SceneManagement.SceneManager.LoadScene(_sceneName[0]);
+        GameManager.Instance.Scene(2);
         Sound0();
     }
 
     public void Stage02()
     {
-        UnityEngine.SceneManagement.SceneManager.LoadScene(_sceneName[1]);
+        GameManager.Instance.Scene(3);
         Sound0();
     }
 
     public void Stage03()
     {
-        UnityEngine.SceneManagement.SceneManager.LoadScene(_sceneName[2]);
+        GameManager.Instance.Scene(4);
         Sound0();
     }
 
     public void Stage04()
     {
-        UnityEngine.SceneManagement.SceneManager.LoadScene(_sceneName[3]);
+        GameManager.Instance.Scene(5);
         Sound0();
     }
 
     public void Stage05()
     {
-        UnityEngine.SceneManagement.SceneManager.LoadScene(_sceneName[4]);
+        GameManager.Instance.Scene(6);
         Sound0();
     }
 
     public void Stage06()
     {
-        UnityEngine.SceneManagement.SceneManager.LoadScene(_sceneName[5]);
+        GameManager.Instance.Scene(7);
         Sound0();
     }
 
     public void Stage07()
     {
-        UnityEngine.SceneManagement.SceneManager.LoadScene(_sceneName[6]);
+        GameManager.Instance.Scene(8);
         Sound0();
     }
 
     public void Stage08()
     {
-        UnityEngine.SceneManagement.SceneManager.LoadScene(_sceneName[7]);
+        GameManager.Instance.Scene(9);
         Sound0();
     }
 
     public void Stage09()
     {
-        UnityEngine.SceneManagement.SceneManager.LoadScene(_sceneName[8]);
+        GameManager.Instance.Scene(10);
         Sound0();
     }
 
     public void Stage10()
     {
-        UnityEngine.SceneManagement.SceneManager.LoadScene(_sceneName[9]);
+        GameManager.Instance.Scene(11);
         Sound0();
     }
 }
