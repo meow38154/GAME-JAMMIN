@@ -30,6 +30,6 @@ public class Scene0 : MonoBehaviour
     {
         DataManager.Instance.PlaySound(0);
 
-        transform.GetChild(3).GetComponent<OnEnableAnimation>().Play(true);
+        transform.GetChild(4).GetComponent<OnEnableAnimation>().Play(true);
     }
 }
