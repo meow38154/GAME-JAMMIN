@@ -46,7 +46,7 @@ public class GameManager : MonoBehaviour
         }
         Debug.Log("Ω√¿€");
         Move = true;
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(0.52f);
         UnityEngine.SceneManagement.SceneManager.LoadScene(num);
         SceneManagerD.Instance.SceneEnd();
         Debug.Log("≥°");

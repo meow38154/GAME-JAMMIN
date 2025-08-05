@@ -18,5 +18,7 @@ public class Sound : MonoBehaviour
     private void Update()
     {
         DataManager.Instance.Volume = _slider.value;
+
+        _slider.interactable = GameManager.Instance.UI.GetComponent<UIOnOff>().UI;
     }
 }
